@@ -19,6 +19,7 @@ const userSchema = new mongoose.Schema(
       trim: true
     },
     roles:[{ 
+      ref: 'Roles',
       type: mongoose.Schema.Types.ObjectId
     }]
     
